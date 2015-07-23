@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2A734601B60A4B0004BC6D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A7345F1B60A4B0004BC6D7 /* AppDelegate.m */; };
-		A2A734631B60A4B0004BC6D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A734621B60A4B0004BC6D7 /* main.m */; };
-		A2A734661B60A4B0004BC6D7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A734651B60A4B0004BC6D7 /* GameViewController.m */; };
-		A2A734681B60A4B0004BC6D7 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A2A734671B60A4B0004BC6D7 /* Shaders.metal */; };
-		A2A7346A1B60A4B0004BC6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A734691B60A4B0004BC6D7 /* Assets.xcassets */; };
-		A2A7346D1B60A4B0004BC6D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A7346B1B60A4B0004BC6D7 /* MainMenu.xib */; };
+		A2AD5BA41B60B0CE00F98845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD5BA31B60B0CE00F98845 /* AppDelegate.m */; };
+		A2AD5BA71B60B0CE00F98845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD5BA61B60B0CE00F98845 /* main.m */; };
+		A2AD5BAA1B60B0CE00F98845 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD5BA91B60B0CE00F98845 /* GameViewController.m */; };
+		A2AD5BAC1B60B0CE00F98845 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A2AD5BAB1B60B0CE00F98845 /* Shaders.metal */; };
+		A2AD5BAF1B60B0CF00F98845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AD5BAE1B60B0CF00F98845 /* Assets.xcassets */; };
+		A2AD5BB21B60B0CF00F98845 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AD5BB01B60B0CF00F98845 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2A7345B1B60A4B0004BC6D7 /* MetalSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A7345E1B60A4B0004BC6D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A2A7345F1B60A4B0004BC6D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2A734621B60A4B0004BC6D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A2A734641B60A4B0004BC6D7 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		A2A734651B60A4B0004BC6D7 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		A2A734671B60A4B0004BC6D7 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		A2A734691B60A4B0004BC6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2A7346C1B60A4B0004BC6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		A2A7346E1B60A4B0004BC6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AD5B9F1B60B0CE00F98845 /* MetalSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AD5BA21B60B0CE00F98845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2AD5BA31B60B0CE00F98845 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2AD5BA61B60B0CE00F98845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2AD5BA81B60B0CE00F98845 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A2AD5BA91B60B0CE00F98845 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		A2AD5BAB1B60B0CE00F98845 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		A2AD5BAD1B60B0CE00F98845 /* SharedStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedStructures.h; sourceTree = "<group>"; };
+		A2AD5BAE1B60B0CF00F98845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2AD5BB11B60B0CF00F98845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A2AD5BB31B60B0CF00F98845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2A734581B60A4B0004BC6D7 /* Frameworks */ = {
+		A2AD5B9C1B60B0CE00F98845 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,42 +40,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A2A734521B60A4B0004BC6D7 = {
+		A2AD5B961B60B0CE00F98845 = {
 			isa = PBXGroup;
 			children = (
-				A2A7345D1B60A4B0004BC6D7 /* MetalSamples */,
-				A2A7345C1B60A4B0004BC6D7 /* Products */,
+				A2AD5BA11B60B0CE00F98845 /* MetalSamples */,
+				A2AD5BA01B60B0CE00F98845 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A2A7345C1B60A4B0004BC6D7 /* Products */ = {
+		A2AD5BA01B60B0CE00F98845 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2A7345B1B60A4B0004BC6D7 /* MetalSamples.app */,
+				A2AD5B9F1B60B0CE00F98845 /* MetalSamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2A7345D1B60A4B0004BC6D7 /* MetalSamples */ = {
+		A2AD5BA11B60B0CE00F98845 /* MetalSamples */ = {
 			isa = PBXGroup;
 			children = (
-				A2A7345E1B60A4B0004BC6D7 /* AppDelegate.h */,
-				A2A7345F1B60A4B0004BC6D7 /* AppDelegate.m */,
-				A2A734641B60A4B0004BC6D7 /* GameViewController.h */,
-				A2A734651B60A4B0004BC6D7 /* GameViewController.m */,
-				A2A734671B60A4B0004BC6D7 /* Shaders.metal */,
-				A2A734691B60A4B0004BC6D7 /* Assets.xcassets */,
-				A2A7346B1B60A4B0004BC6D7 /* MainMenu.xib */,
-				A2A7346E1B60A4B0004BC6D7 /* Info.plist */,
-				A2A734611B60A4B0004BC6D7 /* Supporting Files */,
+				A2AD5BA21B60B0CE00F98845 /* AppDelegate.h */,
+				A2AD5BA31B60B0CE00F98845 /* AppDelegate.m */,
+				A2AD5BA81B60B0CE00F98845 /* GameViewController.h */,
+				A2AD5BA91B60B0CE00F98845 /* GameViewController.m */,
+				A2AD5BAB1B60B0CE00F98845 /* Shaders.metal */,
+				A2AD5BAD1B60B0CE00F98845 /* SharedStructures.h */,
+				A2AD5BAE1B60B0CF00F98845 /* Assets.xcassets */,
+				A2AD5BB01B60B0CF00F98845 /* MainMenu.xib */,
+				A2AD5BB31B60B0CF00F98845 /* Info.plist */,
+				A2AD5BA51B60B0CE00F98845 /* Supporting Files */,
 			);
 			path = MetalSamples;
 			sourceTree = "<group>";
 		};
-		A2A734611B60A4B0004BC6D7 /* Supporting Files */ = {
+		A2AD5BA51B60B0CE00F98845 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2A734621B60A4B0004BC6D7 /* main.m */,
+				A2AD5BA61B60B0CE00F98845 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -82,13 +84,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2A7345A1B60A4B0004BC6D7 /* MetalSamples */ = {
+		A2AD5B9E1B60B0CE00F98845 /* MetalSamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2A734711B60A4B0004BC6D7 /* Build configuration list for PBXNativeTarget "MetalSamples" */;
+			buildConfigurationList = A2AD5BB61B60B0CF00F98845 /* Build configuration list for PBXNativeTarget "MetalSamples" */;
 			buildPhases = (
-				A2A734571B60A4B0004BC6D7 /* Sources */,
-				A2A734581B60A4B0004BC6D7 /* Frameworks */,
-				A2A734591B60A4B0004BC6D7 /* Resources */,
+				A2AD5B9B1B60B0CE00F98845 /* Sources */,
+				A2AD5B9C1B60B0CE00F98845 /* Frameworks */,
+				A2AD5B9D1B60B0CE00F98845 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -96,24 +98,24 @@
 			);
 			name = MetalSamples;
 			productName = MetalSamples;
-			productReference = A2A7345B1B60A4B0004BC6D7 /* MetalSamples.app */;
+			productReference = A2AD5B9F1B60B0CE00F98845 /* MetalSamples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A2A734531B60A4B0004BC6D7 /* Project object */ = {
+		A2AD5B971B60B0CE00F98845 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = Sample;
+				ORGANIZATIONNAME = Codepro;
 				TargetAttributes = {
-					A2A7345A1B60A4B0004BC6D7 = {
+					A2AD5B9E1B60B0CE00F98845 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = A2A734561B60A4B0004BC6D7 /* Build configuration list for PBXProject "MetalSamples" */;
+			buildConfigurationList = A2AD5B9A1B60B0CE00F98845 /* Build configuration list for PBXProject "MetalSamples" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,47 +123,47 @@
 				en,
 				Base,
 			);
-			mainGroup = A2A734521B60A4B0004BC6D7;
-			productRefGroup = A2A7345C1B60A4B0004BC6D7 /* Products */;
+			mainGroup = A2AD5B961B60B0CE00F98845;
+			productRefGroup = A2AD5BA01B60B0CE00F98845 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2A7345A1B60A4B0004BC6D7 /* MetalSamples */,
+				A2AD5B9E1B60B0CE00F98845 /* MetalSamples */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A2A734591B60A4B0004BC6D7 /* Resources */ = {
+		A2AD5B9D1B60B0CE00F98845 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A7346A1B60A4B0004BC6D7 /* Assets.xcassets in Resources */,
-				A2A7346D1B60A4B0004BC6D7 /* MainMenu.xib in Resources */,
+				A2AD5BAF1B60B0CF00F98845 /* Assets.xcassets in Resources */,
+				A2AD5BB21B60B0CF00F98845 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A2A734571B60A4B0004BC6D7 /* Sources */ = {
+		A2AD5B9B1B60B0CE00F98845 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A734681B60A4B0004BC6D7 /* Shaders.metal in Sources */,
-				A2A734631B60A4B0004BC6D7 /* main.m in Sources */,
-				A2A734661B60A4B0004BC6D7 /* GameViewController.m in Sources */,
-				A2A734601B60A4B0004BC6D7 /* AppDelegate.m in Sources */,
+				A2AD5BAC1B60B0CE00F98845 /* Shaders.metal in Sources */,
+				A2AD5BA71B60B0CE00F98845 /* main.m in Sources */,
+				A2AD5BAA1B60B0CE00F98845 /* GameViewController.m in Sources */,
+				A2AD5BA41B60B0CE00F98845 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2A7346B1B60A4B0004BC6D7 /* MainMenu.xib */ = {
+		A2AD5BB01B60B0CF00F98845 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A2A7346C1B60A4B0004BC6D7 /* Base */,
+				A2AD5BB11B60B0CF00F98845 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -169,7 +171,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A2A7346F1B60A4B0004BC6D7 /* Debug */ = {
+		A2AD5BB41B60B0CF00F98845 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		A2A734701B60A4B0004BC6D7 /* Release */ = {
+		A2AD5BB51B60B0CF00F98845 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +250,7 @@
 			};
 			name = Release;
 		};
-		A2A734721B60A4B0004BC6D7 /* Debug */ = {
+		A2AD5BB71B60B0CF00F98845 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -260,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		A2A734731B60A4B0004BC6D7 /* Release */ = {
+		A2AD5BB81B60B0CF00F98845 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,24 +277,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2A734561B60A4B0004BC6D7 /* Build configuration list for PBXProject "MetalSamples" */ = {
+		A2AD5B9A1B60B0CE00F98845 /* Build configuration list for PBXProject "MetalSamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2A7346F1B60A4B0004BC6D7 /* Debug */,
-				A2A734701B60A4B0004BC6D7 /* Release */,
+				A2AD5BB41B60B0CF00F98845 /* Debug */,
+				A2AD5BB51B60B0CF00F98845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2A734711B60A4B0004BC6D7 /* Build configuration list for PBXNativeTarget "MetalSamples" */ = {
+		A2AD5BB61B60B0CF00F98845 /* Build configuration list for PBXNativeTarget "MetalSamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2A734721B60A4B0004BC6D7 /* Debug */,
-				A2A734731B60A4B0004BC6D7 /* Release */,
+				A2AD5BB71B60B0CF00F98845 /* Debug */,
+				A2AD5BB81B60B0CF00F98845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A2A734531B60A4B0004BC6D7 /* Project object */;
+	rootObject = A2AD5B971B60B0CE00F98845 /* Project object */;
 }

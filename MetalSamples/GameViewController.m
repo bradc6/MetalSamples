@@ -3,26 +3,20 @@
 //  MetalSamples
 //
 //  Created by Bradley Clemetson on 7/22/15.
-//  Copyright (c) 2015 Sample. All rights reserved.
+//  Copyright (c) 2015 Codepro. All rights reserved.
 //
 
 #import "GameViewController.h"
 #import <Metal/Metal.h>
 #import <simd/simd.h>
 #import <MetalKit/MetalKit.h>
+#import "SharedStructures.h"
 
 // The max number of command buffers in flight
-static const NSUInteger g_max_inflight_buffers = 3;
+static const NSUInteger kMaxInflightBuffers = 3;
 
 // Max API memory buffer size.
-static const size_t MAX_BYTES_PER_FRAME = 1024*1024;
-
-typedef struct
-{
-    matrix_float4x4 modelview_projection_matrix;
-    matrix_float4x4 normal_matrix;
-    
-} __attribute__((__aligned__(256))) uniforms_t; //On OS X constant buffers must be aligned to multiples of 256 bytes
+static const size_t kMaxBytesPerFrame = 1024*1024;
 
 @implementation GameViewController
 {
@@ -89,11 +83,14 @@ typedef struct
 - (void)_loadAssets
 {
     // Generate meshes
-    MDLMesh *mdl = [MDLMesh newBox:(vector_float3){2,2,2} segments:(vector_uint3){1,1,1} inwardNormals:NO geometryType:MDLGeometryKindTriangles allocator:nil];
-    _boxMesh = [[MTKMesh alloc] initWithMesh:mdl device:_device];
+    MDLMesh *mdl = [MDLMesh newBoxWithDimensions:(vector_float3){2,2,2} segments:(vector_uint3){1,1,1}
+                                    geometryType:MDLGeometryTypeTriangles inwardNormals:NO
+                                       allocator:[[MTKMeshBufferAllocator alloc] initWithDevice: _device]];
+    
+    _boxMesh = [[MTKMesh alloc] initWithMesh:mdl device:_device error:nil];
     
     // Allocate one region of memory for the uniform buffer
-    _dynamicConstantBuffer = [_device newBufferWithLength:MAX_BYTES_PER_FRAME options:0];
+    _dynamicConstantBuffer = [_device newBufferWithLength:kMaxBytesPerFrame options:0];
     _dynamicConstantBuffer.label = @"UniformBuffer";
     
     // Load the fragment program into the library
@@ -156,8 +153,8 @@ typedef struct
     
     MTKSubmesh* submesh = _boxMesh.submeshes[0];
     // Tell the render context we want to draw our primitives
-    [renderEncoder drawIndexedPrimitives:MTLPrimitiveTypeTriangle indexCount:submesh.indexCount indexType:submesh.indexType indexBuffer:submesh.indexBuffer.buffer indexBufferOffset:submesh.indexBuffer.offset];
-    
+    [renderEncoder drawIndexedPrimitives:submesh.primitiveType indexCount:submesh.indexCount indexType:submesh.indexType indexBuffer:submesh.indexBuffer.buffer indexBufferOffset:submesh.indexBuffer.offset];
+
     [renderEncoder popDebugGroup];
     
     // We're done encoding commands
@@ -170,7 +167,7 @@ typedef struct
     }];
     
     // The renderview assumes it can now increment the buffer index and that the previous index won't be touched until we cycle back around to the same index
-    _constantDataBufferIndex = (_constantDataBufferIndex + 1) % g_max_inflight_buffers;
+    _constantDataBufferIndex = (_constantDataBufferIndex + 1) % kMaxInflightBuffers;
     
     // Schedule a present once the framebuffer is complete using the current drawable
     [commandBuffer presentDrawable:_view.currentDrawable];
@@ -194,12 +191,11 @@ typedef struct
     matrix_float4x4 base_mv = matrix_multiply(_viewMatrix, base_model);
     matrix_float4x4 modelViewMatrix = matrix_multiply(base_mv, matrix_from_rotation(_rotation, 1.0f, 1.0f, 1.0f));
     
-    _uniform_buffer.normal_matrix = matrix_invert(matrix_transpose(modelViewMatrix));
-    _uniform_buffer.modelview_projection_matrix = matrix_multiply(_projectionMatrix, modelViewMatrix);
-    
     // Load constant buffer data into appropriate buffer at current index
-    uint8_t *bufferPointer = (uint8_t *)[_dynamicConstantBuffer contents] + (sizeof(uniforms_t) * _constantDataBufferIndex);
-    memcpy(bufferPointer, &_uniform_buffer, sizeof(uniforms_t));
+    uniforms_t *uniforms = &((uniforms_t *)[_dynamicConstantBuffer contents])[_constantDataBufferIndex];
+
+    uniforms->normal_matrix = matrix_invert(matrix_transpose(modelViewMatrix));
+    uniforms->modelview_projection_matrix = matrix_multiply(_projectionMatrix, modelViewMatrix);
     
     _rotation += 0.01f;
 }

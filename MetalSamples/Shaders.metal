@@ -3,11 +3,12 @@
 //  MetalSamples
 //
 //  Created by Bradley Clemetson on 7/22/15.
-//  Copyright (c) 2015 Sample. All rights reserved.
+//  Copyright (c) 2015 Codepro. All rights reserved.
 //
 
 #include <metal_stdlib>
 #include <simd/simd.h>
+#include "SharedStructures.h"
 
 using namespace metal;
 
@@ -15,12 +16,6 @@ using namespace metal;
 constant float3 light_position = float3(0.0, 1.0, -1.0);
 constant float4 ambient_color  = float4(0.18, 0.24, 0.8, 1.0);
 constant float4 diffuse_color  = float4(0.4, 0.4, 1.0, 1.0);
-
-typedef struct
-{
-    matrix_float4x4 modelview_projection_matrix;
-    matrix_float4x4 normal_matrix;
-} uniforms_t;
 
 typedef struct
 {
